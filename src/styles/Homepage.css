@@ -1,0 +1,37 @@
+.main-home {
+    margin-top: 3rem;
+    height: 450vh;
+}
+
+.box h3 {
+    text-align: center;
+    top: 80px;
+    font-size: 25px;
+    font-weight: bold;
+    color: green;
+    position: relative;
+    animation: mybox 1s;
+}
+
+.box {
+    width: 70%;
+    height: 200px;
+    background: #FFF;
+    margin: 40px auto;
+}
+
+.effect {
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+    box-shadow: 0 10px 6px -6px #777;
+}
+
+@keyframes mybox {
+    from {
+        top: 0;
+    }
+
+    to {
+        top: 80px;
+    }
+}
