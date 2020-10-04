@@ -1,6 +1,6 @@
 import { USER_REPO, USER_DATA, GET_REPORISTORY,REMOVE_USERDATA_REPO } from "../actionTypes";
 import axios from "axios";
-import { NotificationManager } from "react-notifications"
+
 
 let repocount;
 
