@@ -1,10 +1,12 @@
 import { USER_REPO, USER_DATA, GET_REPORISTORY,REMOVE_USERDATA_REPO } from "../actionTypes";
 import axios from "axios";
+import { NotificationManager } from "react-notifications"
+
 let repocount;
 
 export const searchByUser = (userName, page) => async (dispatch) => {
   try {
-    const { data } = await axios(`https://api.github.com/users/${userName}`);
+    const  {data}  = await axios(`https://api.github.com/users/${userName}`); 
     dispatch({ type: USER_DATA, payload: data });
     const repos = await axios(`${data.repos_url}?page=${page}&per_page=20`);
     dispatch({

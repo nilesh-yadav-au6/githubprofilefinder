@@ -8,6 +8,7 @@ import {
   Switch,
   Route
 } from "react-router-dom";
+import {NotificationContainer } from "react-notifications"
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             <Route exact path="/user/:user" component={User} />
             <Route exact path="/search" component={Search} />
         </Switch>
+        <NotificationContainer />
     </div>
   );
 }
